@@ -1,0 +1,31 @@
+html {
+    font-family: sans-serif;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  button,
+  input {
+    font-family: inherit;
+    font-size: 100%;
+  }
+  
+  button,
+  input[type="button"],
+  input[type="reset"],
+  input[type="submit"] {
+    appearance: button;
+    cursor: pointer;
+  }
+  
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
