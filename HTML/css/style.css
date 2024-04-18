@@ -217,8 +217,24 @@ header#top nav ul li a.nav-cta {
 	position: relative;
 	padding: 1px 0 0 0;
 }
+#banner2 {
+	height: 840px;
+	background: #f1f6f4 url("https://origincdnv2.blob.core.windows.net/img/home/slides/2024/april-promo/april-promo-1-comp.jpg");
+	padding: 1px 0 0 0;
+}
 
 #banner h2 {
+	margin: 220px auto 0;
+	padding: 0 5%;
+	opacity: 0.9;
+	color: #333;
+	font-size: 108px;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 0.03em;
+}
+#banner2 h2 {
 	margin: 220px auto 0;
 	padding: 0 5%;
 	opacity: 0.9;
@@ -234,9 +250,19 @@ header#top nav ul li a.nav-cta {
 	font-size: 20px;
 	margin: 10px 0 50px 0;
 }
+#banner2 p.subtitle {
+	font-size: 20px;
+	margin: 10px 0 50px 0;
+}
 
 @media only screen and (max-width: 1024px) {
 	#banner h2 {
+		font-size: 400%;
+		margin-top: 100px;
+		padding: 0;
+		width: 100%;
+	}
+	#banner2 h2 {
 		font-size: 400%;
 		margin-top: 100px;
 		padding: 0;
@@ -249,19 +275,32 @@ header#top nav ul li a.nav-cta {
 		font-size: 64px;
 		margin-top: 64px;
 	}
+	#banner2 h2 {
+		font-size: 64px;
+		margin-top: 64px;
+	}
 	#banner p.subtitle {
 	 font-size: 16px;
 	}
+	#banner2 p.subtitle {
+		font-size: 16px;
+	   }
 }
 
 @media only screen and (max-width: 1024px) {
 	#banner {
 		height: 420px;
 	}
+	#banner2 {
+		height: 420px;
+	}
 }
 
 @media only screen and (max-width: 480px) {
 	#banner {
+		height: 400px;
+	}
+	#banner2 {
 		height: 400px;
 	}
 }

@@ -1,3 +1,8 @@
+<?php
+   
+    $successMessage = isset($_GET['success']) ? $_GET['success'] : '';
+    $errorMessage = isset($_GET['error']) ? $_GET['error'] : '';
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -14,21 +19,30 @@
 
 </head>
 <body>
+<?php if (!empty($successMessage)): ?>
+    <div class="success-message"><?php echo $successMessage; ?></div>
+<?php endif; ?>
+
+<?php if (!empty($errorMessage)): ?>
+    <div class="error-message"><?php echo $errorMessage; ?></div>
+<?php endif; ?>
 	<section class="login-section" id="loginSection" style="display: none;">
 		<div class="wrapper">
+			
 			<button id="closeLogin">Close</button>
 		  <h3>Login</h3>
-		  <form class="login-form" action="#" method="post">
+		  <form class="login-form" action="authuser.php" method="post">
 			<div class="form-group">
 			  <label for="username">Username</label>
 			  <input type="text" id="username" name="username" placeholder="Enter your username" required>
 			</div>
 			<div class="form-group">
 			  <label for="password">Password</label>
-			  <input type="password" id="password" name="password" placeholder="Enter your password" required>
+			  <input type="password"  name="password" placeholder="Enter your password" required>
 			</div>
 			<div class="form-group">
-			  <button type="submit" >Login</button>
+			<input type="submit" name="login" value="Login">
+
 			</div>
 		  </form>
 		</div>
@@ -37,17 +51,17 @@
 		<div class="wrapper">
 			<button id="closeSignin">Close</button>
 		  <h3>Sign In</h3>
-		  <form class="signin-form" action="#" method="post">
+		  <form class="signin-form" action="adduser.php" method="post">
 			<div class="form-group">
 			  <label for="username">Username</label>
 			  <input type="text" id="username" name="username" placeholder="Enter your username" required>
 			</div>
 			<div class="form-group">
 			  <label for="password">Password</label>
-			  <input type="password" id="password" name="password" placeholder="Enter your password" required>
+			  <input type="password"  name="password" placeholder="Enter your password" required>
 			</div>
 			<div class="form-group">
-			  <button type="submit">Sign In</button>
+			  <input type="submit" name="join" value="join">
 			</div>
 		  </form>
 		</div>
